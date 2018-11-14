@@ -1,0 +1,28 @@
+{
+  "name": "TripPlanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HamonOverdrive/TripPlanner.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HamonOverdrive/TripPlanner/issues"
+  },
+  "homepage": "https://github.com/HamonOverdrive/TripPlanner#readme",
+  "devDependencies": {
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "mapbox-gl": "^0.51.0"
+  }
+}
