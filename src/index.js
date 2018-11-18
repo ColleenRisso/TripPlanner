@@ -1,8 +1,6 @@
 const mapboxgl = require("mapbox-gl");
 const buildMarker = require('./marker')
 
-let body = document.getElementsByTagName('body')
-
 mapboxgl.accessToken = 'pk.eyJ1IjoiY29sbGVlbmFtZWxpZSIsImEiOiJjam9nZjVhNTQwZWY0M3FwamVobDBmdWYxIn0.4TsGkyF-l1UwzYe7l5wFfQ';
 
 const map = new mapboxgl.Map({
@@ -12,10 +10,5 @@ const map = new mapboxgl.Map({
   style: "mapbox://styles/mapbox/streets-v10" // mapbox has lots of different map styles available.
 });
 
-const marker = buildMarker('hotel', [-74.009, 40.705])
-console.log(marker)
-marker.addTo(map)
-
-// new mapboxgl.Marker(marker).setLngLat([-74.009, 40.705]).addTo(map)
-
-// new mapboxgl.Marker(body).setLngLat([-74.009151, 40.705086]).addTo(map);
+const marker = buildMarker("activities", fullstackCoords);
+marker.addTo(map);
